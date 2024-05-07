@@ -1,8 +1,10 @@
+"use client"
+
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-const userInfo = () => {
+const page = () => {
   const router = useRouter();
   const [userInfo, setUserInfo] = useState([]);
 
@@ -27,4 +29,4 @@ const userInfo = () => {
   );
 };
 
-export default userInfo;
+export default page;
